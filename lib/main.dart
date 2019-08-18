@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'customIcons.dart';
+import 'style.dart';
 
 void main() => runApp(MaterialApp(
       home: MyApp(),
@@ -37,9 +38,12 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only( left: 25),
-              child: Text("Shop", Style),
-            )
+              padding: EdgeInsets.only(left: 25),
+              child: Text("Shop", style: headingStyle),
+            ),
+            SizedBox(
+              height: 22,
+            ),
           ],
         ),
       ),
